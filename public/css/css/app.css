@@ -1,0 +1,158 @@
+@import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("//fonts.googleapis.com/css?family=Open+Sans");
+@import url("pace.css");
+
+body {
+  font-family: Open Sans;
+  background: #f9f9f9;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+#main {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#wrapper {
+  float: left;
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  padding: 0;
+}
+
+.content {
+  width: 100%;
+  position: relative;
+  z-index: 4;
+  float: left;
+  background: #f9f9f9;
+}
+
+.map-container.column-map.right-pos-map {
+  right: 0;
+}
+
+.map-container.column-map {
+  width: 70%;
+  position: fixed;
+  -webkit-transform: translate3d(0, 0, 0);
+  overflow: hidden;
+}
+
+.map-container {
+  float: left;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.map-container #map-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  overflow: hidden;
+}
+
+.left-list {
+  float: left;
+}
+
+.col-list-wrap {
+  position: relative;
+  width: 30%;
+  background: #f9f9f9;
+  min-height: 100vh;
+  z-index: 10;
+  padding: 0 15px 0 15px;
+}
+
+.panel {
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.15);
+}
+
+.panel-body {
+  padding: 0;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 0;
+  border-top: 0;
+}
+
+.panel-group .panel {
+  border-radius: 0;
+}
+
+.panel-default > .panel-heading {
+  color: #333;
+  background-color: #fff;
+  border-color: #e4e5e7;
+  padding: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.panel-default > .panel-heading a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.panel-default > .panel-heading a[aria-expanded=true] {
+  background-color: #eee;
+}
+
+.geodir-category-location {
+  padding: 15px;
+  float: left;
+  width: 100%;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 13px;
+  border-top: 1px solid #eee;
+}
+
+.geodir-category-location i {
+  color: #4DB7FE;
+}
+
+.geodir-category-location span {
+  margin-left: 10px;
+}
+
+p {
+  text-align: left;
+  font-size: 12px;
+  color: #666;
+  margin-left: 10px;
+}
+
+.venue_name {
+  float: left;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.grayscale {
+  -webkit-filter: opacity(0.8) drop-shadow(0 0 0 #4DB7FE);
+  filter: opacity(0.5) drop-shadow(0 0 0 #4DB7FE);
+}
